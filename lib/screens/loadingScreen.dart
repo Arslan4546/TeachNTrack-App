@@ -22,16 +22,16 @@ class LoadingScreenState extends State<LoadingScreen> {
       if(isLogin){
         String? user_type = sp.getString("userType");
         if(user_type=="Admin"){
-          Timer(const Duration(seconds: 3), () {
+          Timer(const Duration(seconds: 20), () {
             Navigator.push(context, MaterialPageRoute(builder: (context)=> const AdminScreen()));
           });
 
         }else if(user_type == "Teacher"){
-          Timer(const Duration(seconds: 5), (){
+          Timer(const Duration(seconds: 20), (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=> const TeacherScreen()));
           });
         }else{
-          Timer(const Duration(seconds: 5), (){
+          Timer(const Duration(seconds: 20), (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=> const StudentScreen()));
           });
         }

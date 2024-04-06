@@ -22,5 +22,6 @@ class Assets {
   static const String imagesSir = 'assets/images/sir.png';
   static const String imagesSocial = 'assets/images/social.png';
   static const String imagesSpbg = 'assets/images/spbg.jpeg';
+  static const String screenshotsSs2 = 'assets/screenshots/ss2.png';
 
 }
